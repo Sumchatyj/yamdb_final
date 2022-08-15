@@ -59,6 +59,7 @@ jobs:
         # Пуш образа в Docker Hub 
         uses: docker/build-push-action@v2 
         with:
+          repository: api_yamdb/
           push: true
           tags: sumchatyj/api_yatube:latest
   deploy:
