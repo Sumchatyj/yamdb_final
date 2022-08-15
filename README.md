@@ -2,7 +2,7 @@
 
 ### Описание:
 
-![workflow](https://github.com/sumchaty/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+[![Django-app workflow](https://github.com/Sumchatyj/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/Sumchatyj/yamdb_final/actions/workflows/yamdb_workflow.yml)
 
 
 API для проектра YaMDb.
