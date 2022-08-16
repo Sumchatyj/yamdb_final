@@ -16,43 +16,26 @@ API для проектра YaMDb.
 Клонировать репозиторий и перейти в него в командной строке:
 
 ```
-git clone https://github.com/Sumchatyj/api_yamdb
+git clone https://github.com/Sumchatyj/yamdb_final
 ```
 
-```
-cd api_final_yatube
-```
-
-Cоздать и активировать виртуальное окружение:
+При необходимости создать файл infra/.env по следующему шаблону:
 
 ```
-python3 -m venv env
+DB_ENGINE=django.db.backends.postgresql
+DB_NAME=postgres
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=<password> # пароль для подключения к БД (установите свой)
+DB_HOST=db # название сервиса (контейнера)
+DB_PORT=5432 # порт для подключения к БД
+DJANGO_SECRET_KEY=<SECRET_KEY> # установите  секретный ключ для Django
+DJANGO_DEBUG=False # при необходимости измените статус режима отладки
 ```
 
-```
-source env/bin/activate
-```
-
-Установить зависимости из файла requirements.txt:
+Собрать образ и запустить контейнер:
 
 ```
-python3 -m pip install --upgrade pip
-```
-
-```
-pip install -r requirements.txt
-```
-
-Выполнить миграции:
-
-```
-python3 manage.py migrate
-```
-
-Запустить проект:
-
-```
-python3 manage.py runserver
+docker-compose up -d
 ```
 
 
